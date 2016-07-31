@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
+    
+  <remote name="bucket"
+           fetch="https://bitbucket.org"
+           revision="master" />  
+
+  <default revision="refs/tags/android-6.0.1_r16"
+           remote="aosp"
+           sync-j="4" />
+  
+  <!--Cross-compile Linux toolchains-->
+  <project path="GCC/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
+  <project path="GCC/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" />
+  <project path="UBERTC/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bucket"/>
+  <project path="UBERTC/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" remote="bucket"/>
+
+</manifest>
