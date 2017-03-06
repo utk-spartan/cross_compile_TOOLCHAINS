@@ -25,5 +25,5 @@
   <project path="GCC/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="google_gcc" />
   <project path="UBERTC/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bucket" groups="ubertc"/>
   <project path="UBERTC/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" remote="bucket" groups="ubertc"/>
-
+  <project path="HYPER_SMxL/arm-linux-androideabi-4.9" name="hyper-toolchains/arm-linux-androideabi-4.9" remote="bucket" revision="SMxL" groups="hyper"/>
 </manifest>
